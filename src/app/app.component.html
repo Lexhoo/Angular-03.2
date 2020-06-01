@@ -1,0 +1,26 @@
+<ul *appMoviesList="showMovies">
+    <span><li [ngClass]="{'first': isFirst}" appFirst>The Godfather</li></span>
+    <li>Batman</li>
+    <li>Les Evadés</li>
+    <li>Blade</li>
+    <li>Scarface</li>
+    <li>Titanic</li>
+    <li>Star Wars</li>
+    <li>Pulp Fiction</li>
+    <li>Harry Potter</li>
+    <li>Bruce Lee</li>
+    <li>SnowPiercer</li>
+
+</ul>
+
+<ul *appDisplayGuest="displayGuest">
+    <li>Bernard</li>
+    <li>Jean</li>
+    <li>Abdou</li>
+    <li>Moustafa</li>
+    <li>Billel</li>
+</ul>
+<hr>
+<ul *ngFor="let song of songList">
+    <li>{{ song }}</li>
+</ul>
